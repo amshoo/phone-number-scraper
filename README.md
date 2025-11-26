@@ -1,6 +1,6 @@
+![Extension Screenshot](icon128.png) 
 # Phone Scraper Chrome Extension
-
-A lightweight Chrome extension that scrapes phone numbers from elements with a class ( e.g., `._ao3e` for WhatsApp phone numbers)
+A lightweight Chrome extension, WaGS, that scrapes phone numbers from elements with a class ( e.g., `._ao3e` for WhatsApp phone numbers)
 
 ## Features
 - Select country code (+55, +52, +57, etc.)
