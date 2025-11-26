@@ -1,6 +1,6 @@
 # Phone Scraper Chrome Extension
 
-A lightweight Chrome extension that scrapes phone numbers from elements with class `._ao3e` (common on LinkedIn, Facebook, and lead generation pages).
+A lightweight Chrome extension that scrapes phone numbers from elements with a class ( e.g., `._ao3e` for WhatsApp phone numbers)
 
 ## Features
 - Select country code (+55, +52, +57, etc.)
@@ -16,6 +16,29 @@ A lightweight Chrome extension that scrapes phone numbers from elements with cla
 3. Enable **Developer mode** (top right)
 4. Click **"Load unpacked"**
 5. Select this folder
+   
+## Changes
+Could you adjust the following depending on the site you are scraping? 
+
+In popup.js - For WhatsApp (._ao3e): 
+<pre class="notranslate"><code>
+  const elements = document.querySelectorAll("._ao3e");
+</code></pre>
+
+
+In popup.html - add as many **country codes** as you want:
+<pre class="notranslate"><code>
+  <select id="countryCode">
+      <option value="+55">Brazil (+55)</option>
+      <option value="+52">Mexico (+52)</option>
+      .
+      .
+      .
+      <option value="+58">Venezuela (+58)</option>
+  </select>
+</code></pre>
+
+
 
 ## Usage
 1. Go to a page with phone numbers (usually in `._ao3e` elements)
@@ -23,3 +46,7 @@ A lightweight Chrome extension that scrapes phone numbers from elements with cla
 3. Choose country code
 4. Click **"Scrape & Count"**
 5. If numbers found → click **"Download List"**
+
+## Acknowledgment 
+This project is inspired by this code <p dir="auto"><a href="https://github.com/redianmarku/whatsapp-phone-number-scraper" rel="nofollow">Whatsapp Phone Number Scrapper</a></p>
+
