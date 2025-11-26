@@ -20,15 +20,16 @@ A lightweight Chrome extension that scrapes phone numbers from elements with a c
 ## Changes
 Could you adjust the following depending on the site you are scraping? 
 
-In popup.js - For WhatsApp (._ao3e): 
-<pre class="notranslate"><code>
+In <code>popup.js</code> - For WhatsApp (._ao3e): 
+```
   const elements = document.querySelectorAll("._ao3e");
-</code></pre>
+```
 
 
-In popup.html - add as many **country codes** as you want:
-<pre class="notranslate">
-  <select id="countryCode">
+In <code>popup.html</code> - add as many **country codes** as you want:
+
+  ```
+   <select id="countryCode">
       <option value="+55">Brazil (+55)</option>
       <option value="+52">Mexico (+52)</option>
       .
@@ -36,7 +37,8 @@ In popup.html - add as many **country codes** as you want:
       .
       <option value="+58">Venezuela (+58)</option>
   </select>
-</pre>
+```
+
 
 
 
