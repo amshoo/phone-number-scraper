@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Phone Scraper</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 16px;
+      font-family: system-ui, sans-serif;
+      background: #fff;
+      color: #000;
+    }
+	.logo img {
+      width: 56px; height: 56px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,212,170,.3);
+      display: block;
+      margin: 0 auto 12px;
+    }
+    h3 { margin: 0 0 12px; text-align: center; font-size: 17px; }
+    select, button {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+    select { background: #333; color: white; }
+    #scrapeBtn {
+      background: #4aa;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    #downloadBtn {
+      background: #333;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      display: none; /* Hidden until numbers found */
+    }
+    #downloadBtn.visible { display: block; }
+    .count {
+      text-align: center;
+      margin: 16px 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+<img src="icon128.png" class="logo" alt="Logo">
+  <h3>WA Groups Scraper by Country</h3>
+  
+  <select id="countryCode">
+    <option value="+234">Nigeria (+234)</option>
+    <option value="+52">Mexico (+52)</option>
+  </select>
+
+  <div class="count">Found: <span id="foundCount">0</span></div>
+
+  <button id="scrapeBtn">Scrape & Count</button>
+  <button id="downloadBtn">Download List</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
