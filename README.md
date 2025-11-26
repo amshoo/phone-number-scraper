@@ -27,7 +27,7 @@ In popup.js - For WhatsApp (._ao3e):
 
 
 In popup.html - add as many **country codes** as you want:
-<pre class="notranslate"><code>
+<pre class="notranslate">
   <select id="countryCode">
       <option value="+55">Brazil (+55)</option>
       <option value="+52">Mexico (+52)</option>
@@ -36,7 +36,7 @@ In popup.html - add as many **country codes** as you want:
       .
       <option value="+58">Venezuela (+58)</option>
   </select>
-</code></pre>
+</pre>
 
 
 
